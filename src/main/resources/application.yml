@@ -1,0 +1,11 @@
+amazon:
+  dynamodb:
+    endpoint: http://localhost:4569
+  aws:
+    accesskey: key
+    secretkey: key2
+  region: us-east-1
+
+server:
+  servlet:
+    context-path: /dynamo-demo/

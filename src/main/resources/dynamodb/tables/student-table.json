@@ -1,0 +1,31 @@
+{
+  "AttributeDefinitions": [
+    {
+      "AttributeName": "student_id",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "first_name",
+      "AttributeType": "S"
+    },
+    {
+      "AttributeName": "last_name",
+      "AttributeType": "S"
+    }
+  ],
+  "TableName": "student",
+  "KeySchema": [
+    {
+      "AttributeName": "student_id",
+      "KeyType": "HASH"
+    },
+    {
+      "AttributeName": "first_name",
+      "KeyType": "RANGE"
+    }
+  ],
+  "ProvisionedThroughput": {
+    "ReadCapacityUnits": 5,
+    "WriteCapacityUnits": 5
+  }
+}
